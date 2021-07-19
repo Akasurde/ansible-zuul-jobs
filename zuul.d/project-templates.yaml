@@ -713,10 +713,14 @@
     check:
       jobs: &ansible-collections-kubernetes-core-units-jobs
         - build-ansible-collection
-        - ansible-test-sanity-docker
-        - ansible-test-sanity-docker-stable-2.9
-        - ansible-test-sanity-docker-stable-2.10
-        - ansible-test-sanity-docker-stable-2.11
+        - ansible-test-sanity-kubernetes-core-devel-python36
+        - ansible-test-sanity-kubernetes-core-2.9-python36
+        - ansible-test-sanity-kubernetes-core-2.10-python36
+        - ansible-test-sanity-kubernetes-core-2.11-python36
+        - ansible-test-sanity-kubernetes-core-devel-python38
+        - ansible-test-sanity-kubernetes-core-2.9-python38
+        - ansible-test-sanity-kubernetes-core-2.10-python38
+        - ansible-test-sanity-kubernetes-core-2.11-python38
     gate:
       jobs: *ansible-collections-kubernetes-core-units-jobs
 
